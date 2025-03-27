@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <title>Programs - Global AI Mining</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Space Grotesk', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .content {
+      flex: 1 0 auto;
+    }
+    .footer {
+      flex-shrink: 0;
+    }
+    .divider {
+      height: 2px;
+      width: 100%;
+      background-color: #d1d5db;
+      margin: 0.75rem 0 0.75rem 0;
+    }
+    .program-section {
+      margin: 0 auto 4.5rem auto;
+      max-width: 75%;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      color: #8B1F24;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .apply-button {
+      background-color: #8B1F24;
+      color: white;
+      padding: 0.15rem 0.75rem;
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    .apply-button:hover {
+      background-color: #7a1b20;
+    }
+    .programs-container {
+      margin: 0 auto;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <div class="content">
+      <!-- Header -->
+      <header class="bg-white border-b">
+        <div class="max-w-screen-xl mx-auto px-10 flex justify-between items-center py-7">
+          <div class="flex items-center space-x-2">
+            <a href="index.html">
+              <img src="GAIM_logo.png" alt="Global AI Mining Logo" class="h-8 w-8 rounded-full"/>
+            </a>
+            <a href="index.html" class="text-3xl font-semibold text-gray-900">Global AI Mining</a>
+          </div>
+          <nav class="space-x-6 text-gray-700 text-sm">
+            <a href="about.html" class="hover:underline font-bold">About</a>
+            <a href="program.html" class="hover:underline font-bold text-[#8B1F24]">Program</a>
+            <a href="contact.html" class="hover:underline font-bold">Contact</a>
+            <a href="login.html" class="bg-[#8B1F24] text-white px-4 py-1 rounded hover:bg-red-800 transition">Log In</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Programs Section Header -->
+      <section class="bg-[#8B1F24] text-white text-center py-12 px-10">
+        <h1 class="text-xl md:text-3xl max-w-5xl mx-auto font-semibold">
+          Program
+        </h1>
+      </section>
+
+      <!-- Programs Content Section -->
+      <section class="max-w-screen-xl mx-auto px-10 py-12 mt-6 bg-white text-black">
+        <div class="programs-container">
+          <!-- Join the GAIM Team Section -->
+          <div class="program-section">
+            <div class="section-header">
+              <h2 class="section-title">Join the GAIM Team</h2>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU4egYBDdEto-wwaTvs8VEAqIU8hx1sttnkFTrOERz1iPDcA/viewform" target="_blank" class="apply-button">Apply</a>
+            </div>
+            <div class="divider"></div>
+            <p class="text-lg leading-relaxed">
+              GAIM is actively hiring full-stack engineers and software development interns to help us build the future of AI-driven talent and research platforms. If you're passionate about AI and want to work on impactful projects, apply now and join our fast-growing team.
+            </p>
+          </div>
+
+          <!-- Job & Internship Placement Section -->
+          <div class="program-section">
+            <div class="section-header">
+              <h2 class="section-title">Job & Internship Placement</h2>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlTJpDzG8d8vCaRKpk82YAld2_8fewH6go-hrPz5stVJVY9g/viewform" target="_blank" class="apply-button">Apply</a>
+            </div>
+            <div class="divider"></div>
+            <p class="text-lg leading-relaxed">
+              Navigating layoffs and career uncertainty? Join our vibrant ecosystem of tech startups seeking talented individuals skilled or interested in AI. Submit your application once, and we'll quickly match you with exciting roles, including product, engineering, sales, and marketing.
+            </p>
+          </div>
+
+          <!-- Half-work & Half-training Program Section -->
+          <div class="program-section">
+            <div class="section-header">
+              <h2 class="section-title">Half-work & Half-training Program</h2>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv0DlWshsQZFu4II21XuTIQ2fkDfunxPEOSMqY2aU5kxgPuw/viewform" target="_blank" class="apply-button">Apply</a>
+            </div>
+            <div class="divider"></div>
+            <p class="text-lg leading-relaxed mb-4">
+              Transitioning into AI from a different background? Our flexible training program helps you build skills and gain real experience.
+            </p>
+            <ul class="list-disc pl-8 space-y-2">
+              <li class="text-lg leading-relaxed">Personalized learning paths based on your background</li>
+              <li class="text-lg leading-relaxed">Hands-on project work with startup partners</li>
+              <li class="text-lg leading-relaxed">OPT & H-1B support: Eligible for international students on OPT seeking long-term work opportunities</li>
+              <li class="text-lg leading-relaxed">Flexible payment: Pay directly or offset tuition with part-time contributions</li>
+            </ul>
+          </div>
+
+          <!-- Research Program Section -->
+          <div class="program-section">
+            <div class="section-header">
+              <h2 class="section-title">Research Program</h2>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmcSRRzWzoH1FzdmL7tvA9K0Z1rqrrAMngZd4N6p45MV1W9w/viewform" target="_blank" class="apply-button">Apply</a>
+            </div>
+            <div class="divider"></div>
+            <p class="text-lg leading-relaxed mb-4">
+              Enhance your academic and professional profile through our intensive, full-time research program:
+            </p>
+            <ul class="list-disc pl-8 space-y-2">
+              <li class="text-lg leading-relaxed">Gain mentorship from leading professors and researchers.</li>
+              <li class="text-lg leading-relaxed">Work collaboratively on real-world industry challenges.</li>
+              <li class="text-lg leading-relaxed">Develop and publish an original research paper.</li>
+              <li class="text-lg leading-relaxed">Strengthen your profile for college admissions, career advancement, or visa applications (O1/EB1A).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer - Cloned from Renaissance with modifications -->
+    <footer class="footer bg-[#0A1A36] text-white text-xs py-16 px-10 w-full">
+      <div class="max-w-screen-xl mx-auto">
+        <!-- Company name at top with logo to the left -->
+        <div class="flex justify-end mb-8">
+          <div class="flex items-center space-x-3">
+            <img src="GAIM_logo.png" alt="Global AI Mining Logo" class="h-8 w-8 rounded-full"/>
+            <div class="text-3xl text-white">Global AI Mining</div>
+          </div>
+        </div>
+        
+        <!-- Full-width white line -->
+        <div class="w-full border-b border-white mb-8"></div>
+        
+        <!-- Links section - Cloned from Renaissance -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 mb-10">
+          <div class="space-y-2">
+            <a href="#" class="hover:underline block">Website Privacy Policy</a>
+            <a href="#" class="hover:underline block">EU and UK Privacy Policies</a>
+            <a href="#" class="hover:underline block">California Privacy Policy</a>
+            <a href="#" class="hover:underline block">Bermuda Privacy Policy</a>
+            <a href="#" class="hover:underline block">Careers Site Privacy Notice</a>
+          </div>
+          <div class="space-y-2">
+            <a href="#" class="hover:underline block">Support</a>
+          </div>
+          <div class="text-right">
+            <p>© 2025 Global AI Mining LLC. All Rights Reserved.</p>
+          </div>
+        </div>
+        
+        <!-- Disclaimer section - Cloned from Renaissance -->
+        <div class="mb-6 text-center">
+          <p class="max-w-4xl mx-auto leading-relaxed">
+            The materials on this website are for illustration and discussion purposes only and do not constitute an offering. An offering may be made only by delivery of a confidential offering memorandum to appropriate investors. PAST PERFORMANCE IS NO GUARANTEE OF FUTURE RESULTS.
+          </p>
+        </div>
+        
+        <!-- Website info section - Cloned from Renaissance -->
+        <div class="text-center">
+          <p class="max-w-4xl mx-auto leading-relaxed">
+            <span>www.globalaimining.com</span> is the only official Global AI Mining LLC website. Neither Global AI Mining nor any of its affiliates operates any other publicly available website. Other websites purporting to be associated with our firm or our funds are not legitimate.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Force a repaint on load to ensure all content is properly rendered
+    window.onload = function() {
+      document.body.style.display = 'none';
+      setTimeout(function() {
+        document.body.style.display = '';
+      }, 10);
+    };
+  </script>
+</body>
+</html> 
