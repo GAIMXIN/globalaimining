@@ -162,6 +162,16 @@
                 <textarea id="message" name="message" rows="6" required class="form-input"></textarea>
               </div>
               
+              <!-- SMS opt-in consent (required) -->
+              <div class="form-group">
+                <label for="smsConsent" class="flex items-start text-sm text-gray-700 leading-relaxed cursor-pointer">
+                  <input type="checkbox" id="smsConsent" name="sms_consent" required class="mt-1 mr-2">
+                  <span>
+                    By submitting this form, you agree to receive SMS updates from Global AI Mining. Message &amp; data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Read our <a href="/privacy.html#sms-consent" class="text-[#8B1F24] hover:underline">SMS Messaging Consent</a>.
+                  </span>
+                </label>
+              </div>
+
               <div class="mt-8">
                 <button type="submit" class="submit-button">Submit</button>
               </div>
@@ -188,7 +198,7 @@
         <!-- Links section - Cloned from Renaissance -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 mb-10">
           <div class="space-y-2">
-            <a href="#" class="hover:underline block">Website Privacy Policy</a>
+            <a href="#privacy-policy" class="hover:underline block">Website Privacy Policy</a>
             <a href="#" class="hover:underline block">EU and UK Privacy Policies</a>
             <a href="#" class="hover:underline block">California Privacy Policy</a>
             <a href="#" class="hover:underline block">Bermuda Privacy Policy</a>
@@ -215,6 +225,14 @@
             <span>www.globalaimining.com</span> is the only official Global AI Mining LLC website. Neither Global AI Mining nor any of its affiliates operates any other publicly available website. Other websites purporting to be associated with our firm or our funds are not legitimate.
           </p>
         </div>
+
+        <!-- Privacy Policy: SMS clause -->
+        <section id="privacy-policy" class="mt-8 text-[11px] leading-relaxed">
+          <h2 class="text-white font-semibold mb-2">SMS Messaging Policy</h2>
+          <p class="mb-2">We collect phone numbers you voluntarily provide via our contact form to communicate with you.</p>
+          <p class="mb-2">If you opt in, we may send SMS updates, notifications, and reminders related to Global AI Mining. Message and data rates may apply.</p>
+          <p>You may opt out at any time by replying <strong>STOP</strong> to any message. For help, reply <strong>HELP</strong>. We will never sell your phone number.</p>
+        </section>
       </div>
     </footer>
   </div>
